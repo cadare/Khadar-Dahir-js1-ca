@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>form validation</title>
+        <link rel="stylesheet" href="/form.css" />
+        <link rel="icon" href="data:;base64,=" />
+    </head>
+    <body>
+        <main class="container">
+            <h1 class='success_text'>
+           Form sent successfully!
+ </h1>
+            <form id="contactForm">
+                <div>
+                    <label>
+                        Name (required)
+                        <input name="name" id="name" />
+                    </label>
+                    <div class="form-error" id="nameError">Kindly enter your name</div>
+                </div>
+
+                <div>
+                    <label>
+                        Subject (requered)
+                        <input name="subject" id="subject" />
+                    </label>
+                    <div class="form-error" id="subjectError">Subject must be at least 10 characters</div>
+                </div>
+
+                <div>
+                    <label>
+                        Email (required)
+                        <input name="email" id="email" />
+                    </label>
+                    <div class="form-error" id="emailError">Please enter a valid email address</div>
+                </div>
+                
+                  <div>
+                    <label>
+                        Address (requered)
+                        <input name="address" id="address" />
+                    </label>
+                    <div class="form-error" id="addressError">Address must be at least 25 characters</div>
+                </div>
+                
+                
+                
+
+                <button>Submit</button>
+            </form>
+        </main>
+        <script src="/form.js"></script>
+    </body>
+</html>
